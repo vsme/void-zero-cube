@@ -10,20 +10,26 @@
       }
       .info {
         position: absolute;
-        top: 10px;
+        top: 30px;
         left: 50%;
         transform: translateX(-50%);
-        color: #fff;
-        z-index: 1;
-        text-align: center;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 5px 10px;
-        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        gap: 10px;
+      }
+      .info span {
+        color: rgba(0, 0, 0, 0.8);
       }
     </style>
   </head>
   <body>
-    <div class="info">鼠标滚轮可旋转立方体</div>
+    <div class="info">
+      <span>鼠标滚轮可旋转立方体</span>
+      <a href="https://github.com/vsme/void-zero-cube" target="_blank" rel="noopener noreferrer">
+        <img src="//img.shields.io/github/stars/vsme/void-zero-cube" alt="GitHub Repo stars">
+      </a>
+    </div>
     <canvas id="cube-canvas"></canvas>
 
     <!-- 引入 Three.js -->
