@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+}
+
+.info {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  gap: 10px;
+  z-index: 9;
+}
+
+.info span {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.cube-box {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  position: relative;
+}
+
+.cube-box .svgs {
+  height: 3000px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.cube-layer {
+  position: sticky;
+  top: 200px;
+  z-index: 5;
+}
+.cube-layer:nth-child(2) {
+  position: sticky;
+  top: 217px;
+  z-index: 4;
+}
+.cube-layer:nth-child(3) {
+  position: sticky;
+  top: 234px;
+  z-index: 3;
+}
+.cube-layer:nth-child(4) {
+  position: sticky;
+  top: 251px;
+  z-index: 2;
+}
+
+.canvas {
+  height: 3000px;
+  position: absolute;
+  top: 500px;
+  z-index: 6;
+  canvas {
+    position: sticky;
+    top: 160px;
+    background-size: 16px 16px;
+    background-image: linear-gradient(to right, #ddd 1px, transparent 1px),
+      linear-gradient(to bottom, #ddd 1px, #fff 1px);
+  }
+}
